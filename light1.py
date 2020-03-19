@@ -1,13 +1,16 @@
-import RPi.GPIO as GPIO
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
+import RPi.GPIO as GPIO
 import time
+import sys
 
 """
 study url: https://my.oschina.net/qnloft/blog/1819817
 """
 
-def first_light():
-    print("Run fist light")
+def first_light(arg):
+    print("Run fist light %d" % arg)
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(11, GPIO.OUT)
     GPIO.output(11, True)
@@ -53,9 +56,16 @@ def control_light_strong():
 
 
 if __name__ == '__main__':
-    first_light()
 
-    flash_light()
+    arg1 = sys.argv[0]
+    if arg1:
+        arg1 = 1
+    else:
+        arg1 = 0
 
-    control_light_strong()
-    pass
+    first_light(arg1)
+
+    # flash_light()
+    #
+    # control_light_strong()
+    # pass
