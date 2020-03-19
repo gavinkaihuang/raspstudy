@@ -14,7 +14,7 @@ def first_light():
     GPIO.cleanup()
 
 def flash_light():
-    print("Now try to flash light")
+    print("Now try to flash light ")
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(11, GPIO.OUT)
 
