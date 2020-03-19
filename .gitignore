@@ -5,7 +5,7 @@
 Thumbs.db
 
 .idea/
-.idea/*
+.idea/workspace.xml
 
 __pycache__/
 *.py[cod]

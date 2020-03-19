@@ -2,10 +2,12 @@ import RPi.GPIO as GPIO
 
 import time
 
-
+"""
+study url: https://my.oschina.net/qnloft/blog/1819817
+"""
 
 def first_light():
-    print("run fist light")
+    print("Run fist light")
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(11, GPIO.OUT)
     GPIO.output(11, True)
