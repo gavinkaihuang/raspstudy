@@ -1,0 +1,9 @@
+# Mac/OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+__pycache__/
+*.py[cod]
+*$py.class
