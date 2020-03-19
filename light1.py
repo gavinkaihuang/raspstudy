@@ -2,9 +2,7 @@ import RPi.GPIO as GPIO
 
 import time
 
-if __name__ == '__main__':
-    first_light()
-    pass
+
 
 def first_light():
     print("run fist light")
@@ -14,3 +12,7 @@ def first_light():
     time.sleep(8)
     GPIO.output(11, False)
     GPIO.cleanup()
+
+if __name__ == '__main__':
+    first_light()
+    pass
