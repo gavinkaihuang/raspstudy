@@ -33,6 +33,7 @@ def work():
             except:
                 print("error\nFailed to read sensor data!")
     finally:
+        print("clean up in finally")
         GPIO.cleanup()
 
 if __name__ == '__main__':

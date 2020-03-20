@@ -24,14 +24,14 @@ def driver():
     # 等待传感器的握手响应信号和数据信号
     GPIO.setup(16, GPIO.IN)
     print("-----start driver 2")
-    # # 总线为低电平，说明传感器发送响应信号，80us低电平
-    # while GPIO.input(16) == GPIO.LOW:
-    #     print("-----start driver 2.1 GPIO.LOW")
-    #     continue
-    # # 然后传感器再把总线拉高80us，然后才准备发送数据
-    # while GPIO.input(16) == GPIO.HIGH:
-    #     print("-----start driver 2.2 GPIO.HIGH")
-    #     continue
+    # 总线为低电平，说明传感器发送响应信号，80us低电平
+    while GPIO.input(16) == GPIO.LOW:
+        print("-----start driver 2.1 GPIO.LOW")
+        continue
+    # 然后传感器再把总线拉高80us，然后才准备发送数据
+    while GPIO.input(16) == GPIO.HIGH:
+        print("-----start driver 2.2 GPIO.HIGH")
+        continue
     # 开始发送数据
     # 一次完整的数据为40bit，高位先出
     # 8bit湿度整数数据+8bit湿度小数数据+8bit温度整数数据+8bit温度小数数据+8bit校验和
