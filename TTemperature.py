@@ -12,7 +12,7 @@ import Adafruit_DHT
 sensor = Adafruit_DHT.DHT22
 
 def work():
-    GPIO.setmode(GPIO.BOARD)
+    GPIO.setmode(GPIO.BCM)
     # BCM number
     pin = 26
     try:
