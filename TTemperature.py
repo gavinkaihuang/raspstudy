@@ -12,6 +12,7 @@ import Adafruit_DHT
 sensor = Adafruit_DHT.DHT11
 
 def work():
+    GPIO.cleanup()
     GPIO.setmode(GPIO.BOARD)
     # BCM number
     pin = 16
