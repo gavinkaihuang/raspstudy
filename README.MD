@@ -9,3 +9,7 @@ study url: http://zhaoxuhui.top/blog/2018/12/10/RaspberrySensors.html
 3. TDistance_light.py
 结合灯和距离传感器联动
 
+4. TDistance_infrared.py
+红外传感器测距
+study url: http://zhaoxuhui.top/blog/2018/12/10/RaspberrySensors.html
+
