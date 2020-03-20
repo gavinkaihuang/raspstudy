@@ -9,6 +9,7 @@ import sys
 study url: https://my.oschina.net/qnloft/blog/1819817
 """
 
+
 def first_light(arg):
     print("Run fist light %d" % arg)
     GPIO.setmode(GPIO.BOARD)

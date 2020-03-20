@@ -6,15 +6,24 @@ import time
 import sys
 
 """
-测试距离传感器
+测试距离传感器， 并点亮灯
 """
 
 Trig_Pin = 7    #信号发送口使用7号GPIO
 Echo_Pin = 22   #信号接收口使用22号GPIO
+Light_Pin = 11   #信号灯接收口使用7号GPIO
 
-
-def getDistance():
+def init():
     GPIO.setmode(GPIO.BOARD)
+
+def trig_light():
+    GPIO.setup(Light_Pin, GPIO.OUT)
+    GPIO.output(Light_Pin, True)
+    time.sleep(0.00015)
+    GPIO.output(Light_Pin, False)
+
+
+def get_distance():
     GPIO.setup(Trig_Pin, GPIO.OUT, initial=GPIO.LOW)
     GPIO.setup(Echo_Pin, GPIO.IN)
     GPIO.output(Trig_Pin, GPIO.HIGH)
@@ -34,12 +43,17 @@ def getDistance():
 if __name__ == '__main__':
     # for arg in sys.argv:
     #     print("param %s" % arg)
+    init()
 
     try:
         while True:
             print('-------')
-            dis = getDistance()
+            dis = get_distance()
+            trig_light()
             print('Distance:%0.2f cm' % dis)
             time.sleep(1)
     except KeyboardInterrupt:
+        # GPIO.cleanup()
+        pass
+    finally:
         GPIO.cleanup()

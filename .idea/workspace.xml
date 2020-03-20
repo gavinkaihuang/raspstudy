@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2676d071-a05a-4745-b2f5-2acb1a6a0df0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/TDistance.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/TDistance_light.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
-      <change beforePath="$PROJECT_DIR$/light1.py" afterPath="$PROJECT_DIR$/TLight.py" />
+      <change beforePath="$PROJECT_DIR$/TDistance.py" afterPath="$PROJECT_DIR$/TDistance.py" />
+      <change beforePath="$PROJECT_DIR$/TLight.py" afterPath="$PROJECT_DIR$/TLight.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="TLight.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TLight.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="31" />
+            <state relative-caret-position="142">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="e#43#66#0" expanded="true" />
               </folding>
@@ -58,14 +58,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TDistance.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TDistance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TDistance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+            <state relative-caret-position="54">
+              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="e#43#66#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TDistance_light.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TDistance_light.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,13 +110,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/light1.py" />
         <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/TLight.py" />
         <option value="$PROJECT_DIR$/TDistance.py" />
+        <option value="$PROJECT_DIR$/TDistance_light.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1953" />
-    <option name="y" value="-82" />
+    <option name="x" value="1840" />
+    <option name="y" value="-16" />
     <option name="width" value="1440" />
     <option name="height" value="831" />
   </component>
@@ -143,6 +155,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/gavin/PycharmProjects/raspstudy/.gitignore" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -244,13 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584644647045</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1. change light python file name&#10;2. Add distance test code TDistance.py">
+      <created>1584684897850</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584684897850</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1953" y="-82" width="1440" height="831" extended-state="0" />
+    <frame x="1840" y="-16" width="1440" height="831" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -279,7 +304,8 @@
     <MESSAGE value="update comment for light1.py" />
     <MESSAGE value="add control strong for light funciton to light1.py" />
     <MESSAGE value="debug in light1.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug in light1.py" />
+    <MESSAGE value="1. change light python file name&#10;2. Add distance test code TDistance.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. change light python file name&#10;2. Add distance test code TDistance.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -310,23 +336,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TLight.py">
+    <entry file="file://$PROJECT_DIR$/TDistance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="31" />
+        <state relative-caret-position="54">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding>
             <element signature="e#43#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TDistance.py">
+    <entry file="file://$PROJECT_DIR$/TLight.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="142">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="e#43#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDistance_light.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
