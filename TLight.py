@@ -56,6 +56,8 @@ def control_light_strong():
 
 
 if __name__ == '__main__':
+    for arg in sys.argv:
+        print("param %s" % arg)
 
     arg1 = sys.argv[0]
     if arg1:
