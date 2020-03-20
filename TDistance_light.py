@@ -19,7 +19,7 @@ def init():
 def trig_light():
     GPIO.setup(Light_Pin, GPIO.OUT)
     GPIO.output(Light_Pin, True)
-    time.sleep(0.00015)
+    time.sleep(0.003)
     GPIO.output(Light_Pin, False)
 
 
@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
     try:
         while True:
-            print('-------')
+            # print('-------')
             dis = get_distance()
             trig_light()
             print('Distance:%0.2f cm' % dis)
