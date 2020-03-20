@@ -9,7 +9,7 @@ import Adafruit_DHT
 
 
 # 定义sensor型号为DHT22
-sensor = Adafruit_DHT.DHT22
+sensor = Adafruit_DHT.DHT11
 
 def work():
     GPIO.setmode(GPIO.BOARD)
