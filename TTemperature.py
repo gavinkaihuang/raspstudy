@@ -21,11 +21,11 @@ def work():
         # 循环
         while True:
             try:
-                print('------start-----')
+                # print('------start-----')
                 hu, temp = Adafruit_DHT.read_retry(sensor, pin)
-                print(hu)
-                print(temp)
-                print('----read value---')
+                # print(hu)
+                # print(temp)
+                # print('----read value---')
                 # print('temperature:{0:0.1f}°C humidity:{1:0.1f}%'.format(temp,hu))
                 print('温度:{0:0.1f}°C 湿度:{1:0.1f}%'.format(temp, hu))
                 time.sleep(2)
