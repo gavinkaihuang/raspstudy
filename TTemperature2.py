@@ -27,17 +27,17 @@ def driver():
     print("-----start driver 2")
     # 总线为低电平，说明传感器发送响应信号，80us低电平
     while GPIO.input(pin_no) == GPIO.LOW:
-        print("-----start driver 2.1 GPIO.LOW")
+        # print("-----start driver 2.1 GPIO.LOW")
         continue
     # 然后传感器再把总线拉高80us，然后才准备发送数据
     while GPIO.input(pin_no) == GPIO.HIGH:
-        print("-----start driver 2.2 GPIO.HIGH")
+        # print("-----start driver 2.2 GPIO.HIGH")
         continue
     # 开始发送数据
     # 一次完整的数据为40bit，高位先出
     # 8bit湿度整数数据+8bit湿度小数数据+8bit温度整数数据+8bit温度小数数据+8bit校验和
     while j < 40:
-        print("-----start driver 3")
+        # print("-----start driver 3")
         k = 0
         # 每一位的起始信号，都以50us低电平开始
         while GPIO.input(pin_no) == GPIO.LOW:
