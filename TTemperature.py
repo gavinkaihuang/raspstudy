@@ -13,9 +13,12 @@ sensor = Adafruit_DHT.DHT11
 
 def work():
     # GPIO.cleanup()
-    GPIO.setmode(GPIO.BOARD)
-    # BCM number
-    pin = 23
+    # BOARD Model
+    # GPIO.setmode(GPIO.BOARD)
+    # pin = 23
+    # BCM Model
+    GPIO.setmode(GPIO.BCM)
+    pin = 16
     try:
         print('开始测量温度')
         # 循环
