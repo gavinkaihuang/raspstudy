@@ -7,6 +7,7 @@ import time
 
 def driver():
     print("-----start driver")
+    pin_no = 23
     # 初始化一个空的列表用来存放时序数据
     data = [0 for i in range(40)]
     j = 0
@@ -14,22 +15,22 @@ def driver():
     GPIO.setmode(GPIO.BOARD)
     time.sleep(1)
     # 先向传感器发送开始信号，握手-LOW-
-    GPIO.setup(16, GPIO.OUT)
-    GPIO.output(16, GPIO.LOW)
+    GPIO.setup(pin_no, GPIO.OUT)
+    GPIO.output(pin_no, GPIO.LOW)
     print("-----start driver 1")
     # 主机把总线拉低必须大于18毫秒，这里采用20毫秒
     time.sleep(0.02)
     # 然后主机拉高并延时等待传感器的响应
-    GPIO.output(16, GPIO.HIGH)
+    GPIO.output(pin_no, GPIO.HIGH)
     # 等待传感器的握手响应信号和数据信号
-    GPIO.setup(16, GPIO.IN)
+    GPIO.setup(pin_no, GPIO.IN)
     print("-----start driver 2")
     # 总线为低电平，说明传感器发送响应信号，80us低电平
-    while GPIO.input(16) == GPIO.LOW:
+    while GPIO.input(pin_no) == GPIO.LOW:
         print("-----start driver 2.1 GPIO.LOW")
         continue
     # 然后传感器再把总线拉高80us，然后才准备发送数据
-    while GPIO.input(16) == GPIO.HIGH:
+    while GPIO.input(pin_no) == GPIO.HIGH:
         print("-----start driver 2.2 GPIO.HIGH")
         continue
     # 开始发送数据
@@ -39,10 +40,10 @@ def driver():
         print("-----start driver 3")
         k = 0
         # 每一位的起始信号，都以50us低电平开始
-        while GPIO.input(16) == GPIO.LOW:
+        while GPIO.input(pin_no) == GPIO.LOW:
             continue
         # 每一位的数值信号，高电平的长短决定了数据位是0还是1。
-        while GPIO.input(16) == GPIO.HIGH:
+        while GPIO.input(pin_no) == GPIO.HIGH:
             # 需要知道每次循环的耗时，才能知道k < x是表示0
             k += 1
             if k > 100:
