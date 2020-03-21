@@ -15,7 +15,7 @@ def work():
     # GPIO.cleanup()
     GPIO.setmode(GPIO.BOARD)
     # BCM number
-    pin = 16
+    pin = 23
     try:
         print('开始测量温度')
         # 循环
