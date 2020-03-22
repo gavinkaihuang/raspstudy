@@ -14,13 +14,14 @@ def light_low(index):
     lenth = len(row)
     num = 0
     for num in range(index_value):
-        print(index_value)
+        # print(index_value)
         row[lenth - num - 1] = True
         # if (num == index - 1):
     saks.ledrow.set_row(row)
-    print("lights value is ", row)
+
     time.sleep(0.2)
     flash_number = lenth - index_value + 1
+    print("lights value is ", row, " flash_number %d" % flash_number)
     saks.ledrow.off_for_index(flash_number)
 
 
