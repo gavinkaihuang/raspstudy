@@ -12,7 +12,7 @@ def light_low(index):
     row = [False, False, False, False, False, False, False, False]
     lenth = len(row)
     num = 0
-    for num in range(index):
+    for num in range(int(index)):
         print(index)
         row[lenth - num] = True
         # if (num == index - 1):
