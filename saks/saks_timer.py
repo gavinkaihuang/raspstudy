@@ -8,18 +8,19 @@ def clean_lights():
     saks.ledrow.set_row(row)
 
 def light_low(index):
-    print("light_low %d" % index)
+    index_value = int(index)
+    print("light_low %d" % index_value)
     row = [False, False, False, False, False, False, False, False]
     lenth = len(row)
     num = 0
-    for num in range(int(index)):
-        print(index)
+    for num in range(index_value):
+        print(index_value)
         row[lenth - num - 1] = True
         # if (num == index - 1):
     saks.ledrow.set_row(row)
     print("lights value is ", row)
     time.sleep(0.5)
-    saks.ledrow.off_for_index(lenth - index + 1)
+    saks.ledrow.off_for_index(lenth - index_value + 1)
 
 
 
