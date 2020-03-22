@@ -55,7 +55,7 @@ def timer():
         time_show = time.strftime("%H.%M", time_value)
         saks.digital_display.show(time_show)
 
-        show_seconds()
+        show_seconds(time_second)
         time.sleep(1)
 
 
