@@ -43,7 +43,11 @@ def show_seconds(model, time_second):
     second = int(time_second)
 
     if second == 0:
-        loop_lights()
+        if (model == 0):
+            loop_lights()
+        else:
+            loop_lights()
+            loop_lights()
     else:
         index = second / 10 + 1
         if (model == 0):
