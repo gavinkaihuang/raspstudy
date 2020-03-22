@@ -34,7 +34,7 @@ def show_seconds(time_second):
     if second == 0:
         clean_lights()
     else:
-        index = second / 10
+        index = second / 10 + 1
         light_low(index)
         # elif second < 10:
         #     index = 1
