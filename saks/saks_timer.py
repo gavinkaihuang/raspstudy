@@ -8,6 +8,7 @@ def clean_lights():
     saks.ledrow.set_row(row)
 
 def light_low(index):
+    print("light_low %D" % index)
     row = [False, False, False, False, False, False, False, False]
     lenth = len(row)
     num = 0
