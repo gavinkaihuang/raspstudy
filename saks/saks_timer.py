@@ -4,12 +4,13 @@ from sakshat import SAKSHAT
 
 def loop_lights():
     saks.ledrow.off()
+    time.sleep(0.05)
     for number in range(8):
         saks.ledrow.on_for_index(number)
-        time.sleep(0.05)
+        time.sleep(0.02)
     for number in range(8):
-        saks.ledrow.off_for_index(7 - number)
-        time.sleep(0.05)
+        saks.ledrow.off_for_index(7 - number) //range 的范围是 0 - 7
+        time.sleep(0.02)
 
 
 def clean_lights():
