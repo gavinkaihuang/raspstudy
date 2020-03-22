@@ -24,15 +24,15 @@ def light_low(index):
 
 
 def show_seconds(time_second):
-    try:
-        print("second is " , time_second)
-        second = int(time_second)
+    # try:
+    print("second is " , time_second)
+    second = int(time_second)
 
-        if second == 0:
-            clean_lights()
-        else:
-            index = second / 10
-            light_low(index)
+    if second == 0:
+        clean_lights()
+    else:
+        index = second / 10
+        light_low(index)
         # elif second < 10:
         #     index = 1
         # elif second < 20:
@@ -47,9 +47,9 @@ def show_seconds(time_second):
         #     index = 6
 
 
-    except BaseException:
-        print(BaseException)
-        pass
+    # except BaseException:
+    #     print(BaseException)
+    #     pass
 
 
 
