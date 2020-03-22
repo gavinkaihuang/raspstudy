@@ -4,7 +4,7 @@ from sakshat import SAKSHAT
 
 def loop_lights():
     saks.ledrow.off()
-    time.sleep(0.05)
+    time.sleep(0.02)
     for number in range(8):
         saks.ledrow.on_for_index(number)
         time.sleep(0.02)
