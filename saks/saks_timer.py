@@ -2,7 +2,8 @@ import time
 import sys
 from sakshat import SAKSHAT
 
-def clean_light():
+def clean_lights():
+    print("clean_lights ")
     row = [False, False, False, False, False, False, False, False]
     saks.ledrow.set_row(row)
 
@@ -15,6 +16,7 @@ def light_low(index):
         row[lenth - num] = True
         # if (num == index - 1):
     saks.ledrow.set_row(row)
+    print("lights value is ", row)
     time.sleep(0.5)
     saks.ledrow.off_for_index(lenth - index + 1)
 
@@ -22,10 +24,11 @@ def light_low(index):
 
 def show_seconds(time_second):
     try:
+        print("second is " , time_second)
         second = int(time_second)
 
         if second == 0:
-            clean_light()
+            clean_lights()
         else:
             index = second / 10
             light_low(index)
