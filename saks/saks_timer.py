@@ -19,8 +19,9 @@ def light_low(index):
         # if (num == index - 1):
     saks.ledrow.set_row(row)
     print("lights value is ", row)
-    time.sleep(0.5)
-    saks.ledrow.off_for_index(lenth - index_value + 1)
+    time.sleep(0.2)
+    flash_number = lenth - index_value + 1
+    saks.ledrow.off_for_index(flash_number)
 
 
 
