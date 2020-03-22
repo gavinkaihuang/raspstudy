@@ -2,14 +2,24 @@ import time
 import sys
 from sakshat import SAKSHAT
 
+def loop_lights():
+    saks.ledrow.off()
+    for number in 8:
+        saks.ledrow.on_for_index(number)
+        time.sleep(0.05)
+    for number in 8:
+        saks.ledrow.off_for_index(8 - number)
+        time.sleep(0.05)
+
+
 def clean_lights():
-    print("clean_lights ")
+    # print("clean_lights ")
     row = [False, False, False, False, False, False, False, False]
     saks.ledrow.set_row(row)
 
 def light_low(index):
     index_value = int(index)
-    print("light_low %d" % index_value)
+    # print("light_low %d" % index_value)
     row = [False, False, False, False, False, False, False, False]
     lenth = len(row)
     num = 0
@@ -21,18 +31,21 @@ def light_low(index):
 
     time.sleep(0.2)
     flash_number = lenth - index_value
-    print("lights value is ", row, " flash_number %d" % flash_number)
+    # print("lights value is ", row, " flash_number %d" % flash_number)
     saks.ledrow.off_for_index(flash_number)
 
 
 
 def show_seconds(time_second):
     # try:
-    print("second is " , time_second)
+    # print("second is " , time_second)
     second = int(time_second)
 
     if second == 0:
-        clean_lights()
+        # clean_lights()
+
+        loop_lights()
+
     else:
         index = second / 10 + 1
         light_low(index)
