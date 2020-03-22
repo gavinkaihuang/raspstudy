@@ -4,10 +4,10 @@ from sakshat import SAKSHAT
 
 def loop_lights():
     saks.ledrow.off()
-    for number in 8:
+    for number in range(8):
         saks.ledrow.on_for_index(number)
         time.sleep(0.05)
-    for number in 8:
+    for number in range(8):
         saks.ledrow.off_for_index(8 - number)
         time.sleep(0.05)
 
