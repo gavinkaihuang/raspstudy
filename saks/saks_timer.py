@@ -77,8 +77,8 @@ if __name__ == '__main__':
     model = 0
     if len(sys.argv) >= 2:
         model = 1
-    print("model is %d" % model)
-    print(len(sys.argv))
+    # print("model is %d" % model)
+    # print(len(sys.argv))
 
 
     saks = SAKSHAT()
