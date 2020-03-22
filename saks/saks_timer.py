@@ -37,40 +37,24 @@ def light_low(index):
 
 
 
-def show_seconds(time_second):
+def show_seconds(model, time_second):
     # try:
     # print("second is " , time_second)
     second = int(time_second)
 
     if second == 0:
-        # clean_lights()
-
         loop_lights()
-
     else:
         index = second / 10 + 1
-        light_low(index)
-        # elif second < 10:
-        #     index = 1
-        # elif second < 20:
-        #     index = 2
-        # elif second < 30:
-        #     index = 3
-        # elif second < 40:
-        #     index = 4
-        # elif second < 50:
-        #     index = 5
-        # elif second < 60:
-        #     index = 6
-
-
-    # except BaseException:
-    #     print(BaseException)
-    #     pass
+        if (model == 0):
+            light_low(index)
+        else:
+            saks.ledrow.off()
+            saks.ledrow.on_for_index(8 - index)
 
 
 
-def timer():
+def timer(model):
     while True:
         time_value = time.localtime()
         time_second = time.strftime("%S", time_value)
@@ -86,5 +70,11 @@ def timer():
 
 if __name__ == '__main__':
 
+    model = 0
+    if len(sys.argv) > 2:
+        model = 1
+    print("model is %d" % model)
+
+
     saks = SAKSHAT()
-    timer()
+    timer(model)
