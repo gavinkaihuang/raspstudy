@@ -50,7 +50,7 @@ def show_seconds(model, time_second):
             light_low(index)
         else:
             saks.ledrow.off()
-            saks.ledrow.on_for_index(8 - index)
+            saks.ledrow.on_for_index(8 - int(index))
 
 
 
