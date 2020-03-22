@@ -14,7 +14,7 @@ def light_low(index):
     num = 0
     for num in range(int(index)):
         print(index)
-        row[lenth - num] = True
+        row[lenth - num - 1] = True
         # if (num == index - 1):
     saks.ledrow.set_row(row)
     print("lights value is ", row)
