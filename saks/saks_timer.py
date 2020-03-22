@@ -48,6 +48,7 @@ def show_seconds(time_second):
 
 
     except BaseException:
+        print(BaseException)
         pass
 
 
