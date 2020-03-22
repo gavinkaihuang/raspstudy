@@ -8,7 +8,7 @@ def loop_lights():
         saks.ledrow.on_for_index(number)
         time.sleep(0.05)
     for number in range(8):
-        saks.ledrow.off_for_index(8 - number)
+        saks.ledrow.off_for_index(7 - number)
         time.sleep(0.05)
 
 
