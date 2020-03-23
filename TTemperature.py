@@ -15,7 +15,7 @@ def work():
     # GPIO.cleanup()
     # BOARD Model
     # Import: Please use model BCM , BOARD is not work
-    GPIO.setmode(GPIO.BCM)
+    # GPIO.setmode(GPIO.BCM) 注意：这里不是使用标准的GPIO口，不需要设置BCM OR  BOARD
     pin = 23
     # BCM Model
     #GPIO.setmode(GPIO.BCM)
