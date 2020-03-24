@@ -2,15 +2,19 @@ import time
 import sys
 from sakshat import SAKSHAT
 
+MODEL = 0 #默认模式
+FLASH_TIMES = 2
+
 def loop_lights():
     saks.ledrow.off()
     time.sleep(0.02)
-    for number in range(8):
-        saks.ledrow.on_for_index(number)
-        time.sleep(0.02)
-    for number in range(8):
-        saks.ledrow.off_for_index(7 - number) #range 的范围是 0 - 7
-        time.sleep(0.02)
+    for times in range(FLASH_TIMES):
+        for number in range(8):
+            saks.ledrow.on_for_index(number)
+            time.sleep(0.02)
+        for number in range(8):
+            saks.ledrow.off_for_index(7 - number) #range 的范围是 0 - 7
+            time.sleep(0.02)
 
 
 def clean_lights():
@@ -44,9 +48,9 @@ def show_seconds(model, time_second):
 
     if second == 0:
         if (model == 0):
+            FLASH_TIMES = 1
             loop_lights()
         else:
-            loop_lights()
             loop_lights()
     else:
         index = second / 10 + 1
@@ -74,12 +78,12 @@ def timer(model):
 
 if __name__ == '__main__':
 
-    model = 0
+    MODEL = 0
     if len(sys.argv) >= 2:
-        model = 1
+        MODEL = 1
     # print("model is %d" % model)
     # print(len(sys.argv))
 
 
     saks = SAKSHAT()
-    timer(model)
+    timer(MODEL)
