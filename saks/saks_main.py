@@ -23,6 +23,7 @@ def show_temp_or_wet(is_temp):
         value = temp
     temp1 = format(value, '>2.1f')
     value = "#" + str(temp1)
+    
     saks.digital_display.show(value)
 
 def tact_event_handler(pin, status):
