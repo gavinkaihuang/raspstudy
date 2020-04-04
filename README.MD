@@ -13,6 +13,9 @@
     红外传感器测距
     study url: http://zhaoxuhui.top/blog/2018/12/10/RaspberrySensors.html
 
+##### 5. THuman.py
+    HC-SR501 人体感应模块
+
 
 ### 2, saks 扩展板代码测试
 ##### 1.  saks_gpio.py 
@@ -29,5 +32,11 @@
 
 ##### 5.  saks_main.py 
     尝试按钮切换温度和湿度
+
+
+##### 6.  saks_showtempwetinfo.py 
+    通过不同参数显示温度和湿度
+    exe： python3 saks_showtempwetinfo.py 1 //显示温度
+        python3 saks_showtempwetinfo.py 2 //显示湿度
 
 
