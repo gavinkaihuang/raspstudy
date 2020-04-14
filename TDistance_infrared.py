@@ -3,9 +3,9 @@ import RPi.GPIO as GPIO
 import time
 
 def work():
-    GPIO.setmode(GPIO.BOARD)
+    GPIO.setmode(GPIO.BCM)
     # 定义引脚
-    GPIO_PIN = 35
+    GPIO_PIN = 4
     # 设置引脚为输入
     GPIO.setup(GPIO_PIN, GPIO.IN)
 

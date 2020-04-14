@@ -4,19 +4,21 @@
     study url: https://my.oschina.net/qnloft/blog/1819817
 
 ##### 2. TDistance.py
+![avatar](./photos/TDistance.jpeg)
     study url: http://zhaoxuhui.top/blog/2018/12/10/RaspberrySensors.html
 
 ##### 3. TDistance_light.py
     结合灯和距离传感器联动
 
 ##### 4. TDistance_infrared.py
+![avatar](./photos/TDistance_infrared.jpeg)
     红外传感器测距
     study url: http://zhaoxuhui.top/blog/2018/12/10/RaspberrySensors.html
 
 ##### 5. THuman.py
     HC-SR501 人体感应模块
 
-##### 5. TLIRC.py
+##### 6. TLIRC.py
     打印红外接收器的按键编码
 
 
