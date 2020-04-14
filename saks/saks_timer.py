@@ -3,7 +3,7 @@ import sys
 from sakshat import SAKSHAT
 
 MODEL = 0 #默认模式
-FLASH_TIMES = 2
+FLASH_TIMES = 2 #set flash times
 
 def loop_lights():
     saks.ledrow.off()
