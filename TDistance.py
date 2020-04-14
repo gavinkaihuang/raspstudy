@@ -6,15 +6,15 @@ import time
 import sys
 
 """
-测试距离传感器
+超声波测试距离传感器
 """
 
-Trig_Pin = 7    #信号发送口使用7号GPIO
-Echo_Pin = 22   #信号接收口使用22号GPIO
+Trig_Pin = 4    #信号发送口使用4号GPIO
+Echo_Pin = 25   #信号接收口使用25号GPIO
 
 
 def getDistance():
-    GPIO.setmode(GPIO.BOARD)
+    GPIO.setmode(GPIO.BCM)
     GPIO.setup(Trig_Pin, GPIO.OUT, initial=GPIO.LOW)
     GPIO.setup(Echo_Pin, GPIO.IN)
     GPIO.output(Trig_Pin, GPIO.HIGH)
