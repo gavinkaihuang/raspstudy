@@ -26,6 +26,7 @@
 
 ##### 7. TSound.py
 ![avatar](./images/TSound.jpeg)
+![avatar](./images/sound_bb.png)
     声音传感器 STC89C52
     传感器灵敏度调整，按图上顺时针为灵敏度低，逆时针为灵敏度高
 
