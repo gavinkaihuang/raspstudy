@@ -31,6 +31,8 @@
 
 
 ### 2, saks 扩展板代码测试
+![avatar](./photos/saks.jpeg)
+
 ##### 1.  saks_gpio.py 
     将温度传感器连接到扩展板的GPIO24口，读取温度和湿度
 
